@@ -45,9 +45,9 @@ export default function App() {
       a = null;
     });
       
-    const data = toByteArray("hello");;
+    const data = toByteArray("command");
 
-      a.send(data, 0, data.length, 4000, "192.168.28.4", function (err) {
+      a.send(data, 0, data.length, 8889, "192.168.10.1", function (err) {
         if (err) throw err;
         updateChatter("b echoed data");
       });
